@@ -25,7 +25,12 @@ int Rectangle::getHeight() {
 int Rectangle::getArea() {
     return getLength()*getHeight();
 }
-
+void Rectangle::setsize(int n){
+    size=n;
+    }
+int Rectangle::getsize(){
+    return size;
+    }
 void Rectangle::move(int dx, int dy) {
     x0 += dx;
     x1 += dx;
