@@ -6,7 +6,7 @@ setup(
   name = 'Demos',
   ext_modules=[
     Extension("tensors",
-              sources=["tensors.pyx", "tensors.cpp"], # Note, you can link against a c++ library instead of including the source
+              sources=["tensors.pyx", "dtensor1.cpp"], # Note, you can link against a c++ library instead of including the source
               include_dirs=["."],
               language="c++"),
     ],

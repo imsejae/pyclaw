@@ -23,7 +23,7 @@ class dTensor1
     // Constructor
     // POST: Create a vector of length n
     
-//    dTensor1(const dTensor1& anotherdTensor1);
+   // dTensor1(const dTensor1& anotherdTensor1);
     // Copy constructor
     // POST: New tensor created with size and contents same as anotherdTensor1
     
