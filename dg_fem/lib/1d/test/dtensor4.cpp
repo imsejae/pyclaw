@@ -29,7 +29,7 @@ dTensor4::dTensor4(int n1, int n2, int n3, int n4)
   numElem4 = n4;
 }
 
-dTensor4::dTensor4(const dTensor4& anotherdTensor4)
+/*dTensor4::dTensor4(const dTensor4& anotherdTensor4)
 // Copy constructor
 // POST: New tensor created with size and contents same as anotherdTensor4
 {
@@ -44,7 +44,7 @@ dTensor4::dTensor4(const dTensor4& anotherdTensor4)
   
   for (i=0; i<size; i++)
     { vec[i] = anotherdTensor4.vec[i]; }
-}
+}*/
 
 dTensor4::~dTensor4()
 // Destructor

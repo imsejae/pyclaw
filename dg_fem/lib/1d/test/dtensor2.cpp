@@ -24,7 +24,7 @@ dTensor2::dTensor2(int numRows, int numColumns)
   columns = numColumns;
 }
 
-dTensor2::dTensor2(const dTensor2& anotherdTensor2)
+/*dTensor2::dTensor2(const dTensor2& anotherdTensor2)
 // Copy constructor
 // POST: New tensor created with size and contents same as anotherdTensor2
 {
@@ -37,7 +37,7 @@ dTensor2::dTensor2(const dTensor2& anotherdTensor2)
   
   for (i=0; i<rows*columns; i++)
     { vec[i] = anotherdTensor2.vec[i]; }
-}
+}*/
 
 dTensor2::~dTensor2()
 // Destructor
