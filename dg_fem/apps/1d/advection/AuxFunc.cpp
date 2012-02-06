@@ -1,5 +1,5 @@
 #include <cmath>
-#include "DOGUserC1D.h"
+#include "../../../lib/1d/DOGUserC1D.h"
 
 // This is a user-supplied routine that sets the
 // auxiliary arrays at all the points "xpts"

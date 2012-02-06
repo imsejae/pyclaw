@@ -1,5 +1,6 @@
 #include <cmath>
-#include "DOGUserC1D.h"
+#include "../../../lib/1d/DOGUserC1D.h"
+#include "../../../lib/1d/constants.h"
 
 // This is a user-supplied routine that sets the
 // initial conditions at all the points "xpts"

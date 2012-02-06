@@ -1,4 +1,4 @@
-#include "DOGUserC1D.h"
+#include "../../../lib/1d/DOGUserC1D.h"
 
 // This is a user-supplied routine that projects
 // Qvals onto the left eigenvectors ofthe flux 
