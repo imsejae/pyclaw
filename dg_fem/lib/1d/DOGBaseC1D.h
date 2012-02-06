@@ -1,4 +1,4 @@
-#define _DOGBASE_H_
+#define _DOGBASEC1D_H_
 // --------------------------------------------------------------------------
 //  DOGPACK base files (1d)
 // --------------------------------------------------------------------------
@@ -7,15 +7,19 @@
 #include "tensors.h"
 
 // RANK ONE TENSORS ----------------------------------------
-class DOGBase
+class DOGBaseC1D
 {
  public:
   // Constructor
-  DOGBase();
+  DOGBaseC1D();
   
   // Destructor
-  ~DOGBase();    
+  ~DOGBaseC1D();    
 
+  // private:
+  
+
+  /*
   // L2Project function
   void L2Project(int mopt, int istart, int iend,
 		 const dTensor2& node,
@@ -31,34 +35,7 @@ class DOGBase
 	      double t,
 	      int nframe,
 	      string outputdir);
-  
-  // Right-hand side function
-  void ConstructL(const int method[],
-		  const dTensor2& node,
-		  dTensorBC3& aux,
-		  dTensorBC3& q,
-		  dTensorBC3& Lstar,
-		  dTensorBC1& smax);
-
-  // Runge-Kutta time-stepping method
-  void DogSolveRK(const dTensor2& node, const dTensor1& prim_vol, dTensorBC3& aux, 
-		  dTensorBC3& qold, dTensorBC3& qnew, dTensorBC1& smax,
-		  double tstart, double tend,int nv, const int method[],
-		  double dtv[], const double cflv[],string outputdir);
-
-  // Function to compute CFL number
-  double GetCFL(double dt,double dtmax,
-		const dTensor1& prim_vol,
-		const int method[],
-		const dTensorBC3& aux,
-		const dTensorBC1& smax);
-  
-  // Update the solution using the constructed Lstar
-  void UpdateSoln(double alpha1,double alpha2,double beta,double dt,
-		  const dTensor2& node,const dTensorBC3& aux,
-		  const dTensorBC3& qstar, const dTensorBC3& Lstar,
-		  dTensorBC3& qnew);
-
-  
+  */
+ 
 };
 // ---------------------------------------------------------
