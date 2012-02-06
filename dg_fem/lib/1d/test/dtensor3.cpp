@@ -26,7 +26,7 @@ dTensor3::dTensor3(int n1, int n2, int n3)
   numElem3 = n3;
 }
 
-dTensor3::dTensor3(const dTensor3& anotherdTensor3)
+/*dTensor3::dTensor3(const dTensor3& anotherdTensor3)
 // Copy constructor
 // POST: New tensor created with size and contents same as anotherdTensor3
 {
@@ -40,7 +40,7 @@ dTensor3::dTensor3(const dTensor3& anotherdTensor3)
   
   for (i=0; i<numElem1*numElem2*numElem3; i++)
     { vec[i] = anotherdTensor3.vec[i]; }
-}
+}*/
 
 dTensor3::~dTensor3()
 // Destructor

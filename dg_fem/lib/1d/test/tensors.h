@@ -45,7 +45,7 @@ class dTensor1
     int size;
 };
 // ---------------------------------------------------------
-/*
+
 
 // RANK TWO TENSORS ----------------------------------------
 class dTensor2
@@ -55,7 +55,7 @@ class dTensor2
     // Constructor
     // POST: Create a matrix with n1 rows and n2 columns
     
-    dTensor2(const dTensor2& anotherdTensor2);
+//    dTensor2(const dTensor2& anotherdTensor2);
     // Copy constructor
     // POST: New tensor created with size and contents same as anotherdTensor2
     
@@ -89,7 +89,7 @@ class dTensor3
     // Constructor
     // POST: Create a tensor of size (n1,n2,n3)
     
-    dTensor3(const dTensor3& anotherdTensor3);
+//    dTensor3(const dTensor3& anotherdTensor3);
     // Copy constructor
     // POST: New tensor created with size and contents same as anotherdTensor3
     
@@ -404,5 +404,5 @@ class dTensorBC4
     int numElem1,numElem2,numElem3,numElem4;
     int mbc;
 };
-*/
+
 // ---------------------------------------------------------
