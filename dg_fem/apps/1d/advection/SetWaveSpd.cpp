@@ -1,5 +1,5 @@
-#include "DOGUserC1D.h"
-#include "dog_math.h"
+#include "../../../lib/1d/DOGUserC1D.h"
+#include "../../../lib/1d/dog_math.h"
 
 // This is a user-supplied routine that sets the
 // HLLE wave speeds for use in "RiemannSolve"

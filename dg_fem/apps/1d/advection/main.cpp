@@ -1,4 +1,6 @@
-#include "dogdefs.h"
+#include "../../../lib/1d/tensors.h"
+#include "../../../lib/1d/DOGUserC1D.h"
+#include "../../../lib/1d/DOGBaseC1D.h"
 
 // =========================================================================
 //
@@ -23,12 +25,12 @@
 
 int main()
 {
-  // Declare DOGBASE object
+  // Declare DOGBASE and DOGUSER objects
   DOGBaseC1D dogBaseC1D();
   DOGUserC1D dogUserC1D();
   
   // Parameters and output directory
-  dogBaseC1D.Initialize();
+  //dogBaseC1D.Initialize();
   /*
   ini_doc.initFromFile("parameters.ini");
   IniDocument::Section& ini_sec = ini_doc["dogParams"];
@@ -36,12 +38,12 @@ int main()
   */
 
   // Run the startscript
-  dogBaseC1D.RunStartScript(1);
+  //dogBaseC1D.RunStartScript(1);
 
   // Call the ``RunDogpack'' routine, which executes the
   // discontinuous Galerkin code
   int m;
-  string outputdir = "output";
+  //string outputdir = "output";
   //m = dogBaseC1D.RunDogpack(outputdir);
   
   return m;

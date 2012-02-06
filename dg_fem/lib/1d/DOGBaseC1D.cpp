@@ -2,7 +2,7 @@
 //  DOGPACK base files (1d)
 // --------------------------------------------------------------------------
 
-#include "DOGBase1D.h"
+#include "DOGBaseC1D.h"
 
 // Constructor
 DOGBaseC1D::DOGBaseC1D()

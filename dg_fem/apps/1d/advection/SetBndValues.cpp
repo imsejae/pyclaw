@@ -1,4 +1,4 @@
-#include "DOGUserC1D.h"
+#include "../../../lib/1d/DOGUserC1D.h"
 
 // Periodic boundary conditions
 void DOGUserC1D::SetBndValues(const dTensor2& node, 

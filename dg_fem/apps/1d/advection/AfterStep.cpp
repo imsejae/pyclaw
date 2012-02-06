@@ -1,4 +1,4 @@
-#include "DOGUserC1D.h"
+#include "../../../lib/1d/DOGUserC1D.h"
 
 // Function that is called after each time step
 void DOGUserC1D::AfterStep(double dt, const dTensor2& node, dTensorBC3& aux, dTensorBC3& q)
