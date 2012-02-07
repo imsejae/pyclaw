@@ -3,13 +3,19 @@
 #include <iostream>
 #include <iomanip>
 #include "tensors.h"
+#include "DogParams.h"
+#include "DogParamsCart1.h"
+#include "dog_math.h"
 using namespace std;
 
-int RunDogpack(dTensorBC3& q)
+int RunDogpack(const char* outputdir,
+	       const DogParams& dogParams,
+	       const DogParamsCart1& dogParamsCart1,
+	       dTensorBC3& q)
 {
-  /*
   // ------------------------------------------------------------
-  // Function definitions
+  // Functions
+  /*
   void GridSetup(int,double,double,dTensor2&,dTensor1&);
   void L2Project(int mopt, int istart, int iend,
 		 const dTensor2& node,
@@ -44,29 +50,10 @@ int RunDogpack(dTensorBC3& q)
 		    dTensorBC1&,double,double,int,const int[],
 		    double[],const double[],string);
   void InitApp(IniDocument& ini_doc);
+  */
   // ------------------------------------------------------------
 
-  // Output title information
-  cout << endl;
-  cout << "   ------------------------------------------------   " << endl;
-  cout << "   | DoGPack: The Discontinuous Galerkin Package  |   " << endl;
-  cout << "   | Developed by the research group of           |   " << endl;
-  cout << "   |            James A. Rossmanith               |   " << endl;
-  cout << "   |            Department of Mathematics         |   " << endl;
-  cout << "   |            University of Wisconsin - Madison |   " << endl;
-  cout << "   ------------------------------------------------   " << endl;
-  cout << endl;
-  
-  // Get parameters
-  dogParams.init(ini_doc);
-  dogParamsCart1.init(ini_doc);
-  cout << endl;
-  
-  // Get addtional parameters
-  InitApp(ini_doc);
-  cout << endl;
-  
-  fetch_dogState().init();
+  // Parameters  
   const string time_stepping_method = dogParams.get_time_stepping_method();
   const int&     nout     = dogParams.get_nout();
   const double&  tfinal   = dogParams.get_tfinal();
@@ -88,9 +75,14 @@ int RunDogpack(dTensorBC3& q)
   const int mnodes = melems + 1;
   
   // Output meqn and nout for plotting purposes
-  string qhelp;
-  qhelp=outputdir+"/qhelp.dat";
-  ofstream out_file(qhelp.c_str(), ios::out);
+  char* qhelp;
+  printf(" dude = %s\n",outputdir);
+  strcpy(qhelp,outputdir);
+  printf("qhelp = %s",qhelp);
+  strcat(qhelp,"strings");
+  printf("qhelp = %s",qhelp);
+  //qhelp=outputdir+"/qhelp.dat";
+  ofstream out_file(qhelp, ios::out);
   
   out_file << setprecision(16);
   out_file << nout << endl << meqn << endl << method[6] << endl;
@@ -108,6 +100,7 @@ int RunDogpack(dTensorBC3& q)
   dTensorBC1    smax(melems,mbc);
   dTensorBC3    aux(melems,iMax(method[6],1),method[1],mbc);
   
+  /*
   // Construct 1D grid
   GridSetup(method[1],xlow,dx,node,prim_vol);
   

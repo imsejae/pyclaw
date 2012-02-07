@@ -1,7 +1,8 @@
 #include <stdlib.h> // for system()
 #include <stdio.h>
 
-void RunStartScript(int ndims)
+void RunStartScript(int ndims,
+		    char* outputdir)
 {
   // run startscript
   // to create output directory if it does not exist
@@ -12,6 +13,6 @@ void RunStartScript(int ndims)
     "if test -f startscript && test -x startscript;\n"
     "then ./startscript %s %d\n"
     "else ${PYCLAW}/dg_fem/scripts/startscript %s %d\n"
-    "fi", "output",ndims,"output",ndims);
+    "fi", outputdir,ndims,outputdir,ndims);
   int exit_status = system(command_str);
 }
