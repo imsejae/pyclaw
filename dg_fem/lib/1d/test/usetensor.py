@@ -1,5 +1,6 @@
 
 from tensors import dTensor1,iTensor1,dTensorBC1,dTensor2,iTensor2,dTensorBC2,dTensor3,iTensor3,dTensorBC3,dTensor4,dTensorBC4
+from tensors import SumOperator
 
 tens=dTensor1(5)
 
@@ -11,6 +12,8 @@ tens.set(5,-2.0)
 
 for i in range(1,6):
  print tens.get(i)
+b=SumOperator(tens)
+print "Sum=?",b
 
 tens=iTensor1(5)
 
@@ -191,5 +194,7 @@ for i in range(0,4):
   for k in range(1,3):
    for kj in range(1,2):
     print "BC4=",tens.get(i,j,k,kj)
+
+
 
 print "end 4d"

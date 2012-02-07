@@ -10,5 +10,5 @@ dtensorBC4.cpp \
 itensor1.cpp \
 itensor2.cpp \
 itensor3.cpp \
-main.cpp \
+testtensor.cpp \
 -o test.exe
