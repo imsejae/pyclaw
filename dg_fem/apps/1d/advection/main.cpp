@@ -25,14 +25,33 @@
 //             rossmani@math.wisc.edu
 // =========================================================================
 
-int main()
+
+int main(const char* argv[], int nargs)
 {  
+  char* filename = argv[1]
+
+  // Output title information
+  printf("\n");
+  printf("   ------------------------------------------------   \n");
+  printf("   | DoGPack: The Discontinuous Galerkin Package  |   \n");
+  printf("   | Developed by the research group of           |   \n");
+  printf("   |            James A. Rossmanith               |   \n");
+  printf("   |            Department of Mathematics         |   \n");
+  printf("   |            University of Wisconsin - Madison |   \n");
+  printf("   ------------------------------------------------   \n");
+  printf("\n");
+
   // Parameters
   DogParams dogParams;
   DogParamsCart1 dogParamsCart1;
-  void Initialize(DogParams& dogParams,
+  char* outputdir;
+  void Initialize(char* outputdir,
+		  DogParams& dogParams,
 		  DogParamsCart1& dogParamsCart1);
-  Initialize(dogParams,dogParamsCart1);
+  Initialize(outputdir,
+	     dogParams,
+	     dogParamsCart1);
+  printf(" dude = %s\n",outputdir);
 
   // Create solution array
   int mx = dogParamsCart1.get_mx();
@@ -42,14 +61,20 @@ int main()
   dTensorBC3 q(mx,meqn,kmax,mbc);
 
   // Run the startscript
-  void RunStartScript(int dim);
-  RunStartScript(1);
+  //void RunStartScript(int dim,
+  //		      const char*);
+  //RunStartScript(1,
+  //		 outputdir);
 
   // Call the ``RunDogpack'' routine, which executes the
   // discontinuous Galerkin code
-  int RunDogpack(const DogParams& dogParams,
+  int RunDogpack(const char* outputdir,
+		 const DogParams& dogParams,
 		 const DogParamsCart1& dogParamsCart1,
 		 dTensorBC3& q);
-  int m = RunDogpack(dogParams,dogParamsCart1,q);
+  int m = RunDogpack(outputdir,
+		     dogParams,
+		     dogParamsCart1,
+		     q);
   return m;
 }
