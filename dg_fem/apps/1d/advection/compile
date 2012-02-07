@@ -12,7 +12,8 @@ $PYCLAW/dg_fem/lib/1d/itensor2.cpp \
 $PYCLAW/dg_fem/lib/1d/itensor3.cpp \
 $PYCLAW/dg_fem/lib/1d/DOGBaseC1D.cpp \
 $PYCLAW/dg_fem/lib/1d/DOGUserC1D.cpp \
-$PYCLAW/dg_fem/lib/1d/DOGDataC1D.cpp \
+$PYCLAW/dg_fem/lib/1d/DogParams.cpp \
+$PYCLAW/dg_fem/lib/1d/DogParamsCart1.cpp \
 $PYCLAW/dg_fem/lib/1d/Initialize.cpp \
 $PYCLAW/dg_fem/lib/1d/RunStartScript.cpp \
 $PYCLAW/dg_fem/lib/1d/RunDogpack.cpp \

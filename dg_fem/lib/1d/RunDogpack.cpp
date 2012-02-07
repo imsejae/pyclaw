@@ -2,11 +2,10 @@
 #include <sstream>
 #include <iostream>
 #include <iomanip>
-#include "DOGDataC1D.h"
 #include "tensors.h"
 using namespace std;
 
-int RunDogpack(DOGDataC1D& dogDataC1D, dTensorBC3& q)
+int RunDogpack(dTensorBC3& q)
 {
   /*
   // ------------------------------------------------------------

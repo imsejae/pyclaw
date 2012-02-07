@@ -1,7 +1,8 @@
 #include "../../../lib/1d/tensors.h"
 #include "../../../lib/1d/DOGUserC1D.h"
 #include "../../../lib/1d/DOGBaseC1D.h"
-#include "../../../lib/1d/DOGDataC1D.h"
+#include "../../../lib/1d/DogParams.h"
+#include "../../../lib/1d/DogParamsCart1.h"
 
 // =========================================================================
 //
@@ -25,16 +26,20 @@
 // =========================================================================
 
 int main()
-{
-  // Create dogData object
-  DOGDataC1D dogDataC1D;
-  
+{  
   // Parameters
-  void Initialize(DOGDataC1D& dogDataC1D);
-  Initialize(dogDataC1D);
+  DogParams dogParams;
+  DogParamsCart1 dogParamsCart1;
+  void Initialize(DogParams& dogParams,
+		  DogParamsCart1& dogParamsCart1);
+  Initialize(dogParams,dogParamsCart1);
 
-  // Create solution area
-  dTensorBC3 q(1,1,1,1);
+  // Create solution array
+  int mx = dogParamsCart1.get_mx();
+  int mbc = dogParamsCart1.get_mbc();
+  int meqn = dogParams.get_meqn();
+  int kmax = dogParams.get_kmax();
+  dTensorBC3 q(mx,meqn,kmax,mbc);
 
   // Run the startscript
   void RunStartScript(int dim);
@@ -42,8 +47,9 @@ int main()
 
   // Call the ``RunDogpack'' routine, which executes the
   // discontinuous Galerkin code
-  int RunDogpack(DOGDataC1D& dogDataC1D, dTensorBC3& q);
-  int m = RunDogpack(dogDataC1D,q);
-  
+  int RunDogpack(const DogParams& dogParams,
+		 const DogParamsCart1& dogParamsCart1,
+		 dTensorBC3& q);
+  int m = RunDogpack(dogParams,dogParamsCart1,q);
   return m;
 }
