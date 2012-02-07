@@ -1,7 +1,6 @@
 #ifndef DOGPARAMSCART1_H
 #define DOGPARAMSCART1_H
 
-class IniDocument;
 struct DogParamsCart1{
  private:
    bool is_initialized;
@@ -14,17 +13,20 @@ struct DogParamsCart1{
  //
  // methods
  //
- private:
-   void checkParameters();
-   void setDerivedParameters();
- public:
-   bool get_is_initialized(){return is_initialized;}
-   void reportParameters();
+private:
+  void checkParameters();
+  void setDerivedParameters();
+public:
+  bool get_is_initialized(){return is_initialized;}
+  void reportParameters();
+  
+  DogParamsCart1(){is_initialized=false;}
 
-   DogParamsCart1(){is_initialized=false;}
-
-   void init(IniDocument& ini_doc);
-
+  void init(const int mx_in,
+	    const int mbc_in,
+	    const int xlow_in,
+	    const int xhigh_in);
+    
    const int   & get_mx()    const{ return  mx;   }
    const int   & get_melems()    const{ return  mx;   }
    const int   & get_mbc()   const{ return  mbc;  }
@@ -35,7 +37,5 @@ struct DogParamsCart1{
    void set_mx(int mx_in){ mx = mx_in; }
    void set_xlims(double,double);
 };
-
-extern DogParamsCart1 dogParamsCart1;
 
 #endif

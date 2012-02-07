@@ -1,6 +1,8 @@
 #include "../../../lib/1d/tensors.h"
 #include "../../../lib/1d/DOGUserC1D.h"
 #include "../../../lib/1d/DOGBaseC1D.h"
+#include "../../../lib/1d/DogParams.h"
+#include "../../../lib/1d/DogParamsCart1.h"
 
 // =========================================================================
 //
@@ -24,27 +26,30 @@
 // =========================================================================
 
 int main()
-{
-  // Declare DOGBASE and DOGUSER objects
-  DOGBaseC1D dogBaseC1D();
-  DOGUserC1D dogUserC1D();
-  
-  // Parameters and output directory
-  //dogBaseC1D.Initialize();
-  /*
-  ini_doc.initFromFile("parameters.ini");
-  IniDocument::Section& ini_sec = ini_doc["dogParams"];
-  DogSolver::parse_arguments();
-  */
+{  
+  // Parameters
+  DogParams dogParams;
+  DogParamsCart1 dogParamsCart1;
+  void Initialize(DogParams& dogParams,
+		  DogParamsCart1& dogParamsCart1);
+  Initialize(dogParams,dogParamsCart1);
+
+  // Create solution array
+  int mx = dogParamsCart1.get_mx();
+  int mbc = dogParamsCart1.get_mbc();
+  int meqn = dogParams.get_meqn();
+  int kmax = dogParams.get_kmax();
+  dTensorBC3 q(mx,meqn,kmax,mbc);
 
   // Run the startscript
-  //dogBaseC1D.RunStartScript(1);
+  void RunStartScript(int dim);
+  RunStartScript(1);
 
   // Call the ``RunDogpack'' routine, which executes the
   // discontinuous Galerkin code
-  int m;
-  //string outputdir = "output";
-  //m = dogBaseC1D.RunDogpack(outputdir);
-  
+  int RunDogpack(const DogParams& dogParams,
+		 const DogParamsCart1& dogParamsCart1,
+		 dTensorBC3& q);
+  int m = RunDogpack(dogParams,dogParamsCart1,q);
   return m;
 }
