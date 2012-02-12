@@ -1,0 +1,283 @@
+
+   ------------------------------------------------   
+   | DoGPack: The Discontinuous Galerkin Package  |   
+   | Developed by the research group of           |   
+   |            James A. Rossmanith               |   
+   |            Department of Mathematics         |   
+   |            University of Wisconsin - Madison |   
+   ------------------------------------------------   
+
+   === parameters from [dogParams] ===
+                      Mesh Type:  Cartesian
+   Number of Spatial Dimensions:  1
+            Number of Equations:  1
+      Order of Accuracy in Time:  4
+     Order of Accuracy in Space:  4
+           Time-Stepping Method:  Runge-Kutta
+                 Limiter Method:  moment
+                       Limiters:  no
+         desired Courant number:  0.440000
+
+   === parameters from [grid] ===
+   mx   : 50
+   mbc  : 5
+   xlow : 0.000000
+   xhigh: 1.000000
+   --- parameters derived from [grid] ---
+   dx   : 0.020000 
+
+
+DogSolve1D ... Step    1   CFL = 0.200   dt =  2.000e-03   t =  2.000e-03
+DogSolve1D ... Step    2   CFL = 0.440   dt =  4.400e-03   t =  6.400e-03
+DogSolve1D ... Step    3   CFL = 0.440   dt =  4.400e-03   t =  1.080e-02
+DogSolve1D ... Step    4   CFL = 0.440   dt =  4.400e-03   t =  1.520e-02
+DogSolve1D ... Step    5   CFL = 0.440   dt =  4.400e-03   t =  1.960e-02
+DogSolve1D ... Step    6   CFL = 0.440   dt =  4.400e-03   t =  2.400e-02
+DogSolve1D ... Step    7   CFL = 0.440   dt =  4.400e-03   t =  2.840e-02
+DogSolve1D ... Step    8   CFL = 0.440   dt =  4.400e-03   t =  3.280e-02
+DogSolve1D ... Step    9   CFL = 0.440   dt =  4.400e-03   t =  3.720e-02
+DogSolve1D ... Step   10   CFL = 0.440   dt =  4.400e-03   t =  4.160e-02
+DogSolve1D ... Step   11   CFL = 0.440   dt =  4.400e-03   t =  4.600e-02
+DogSolve1D ... Step   12   CFL = 0.440   dt =  4.400e-03   t =  5.040e-02
+DogSolve1D ... Step   13   CFL = 0.440   dt =  4.400e-03   t =  5.480e-02
+DogSolve1D ... Step   14   CFL = 0.440   dt =  4.400e-03   t =  5.920e-02
+DogSolve1D ... Step   15   CFL = 0.440   dt =  4.400e-03   t =  6.360e-02
+DogSolve1D ... Step   16   CFL = 0.440   dt =  4.400e-03   t =  6.800e-02
+DogSolve1D ... Step   17   CFL = 0.440   dt =  4.400e-03   t =  7.240e-02
+DogSolve1D ... Step   18   CFL = 0.440   dt =  4.400e-03   t =  7.680e-02
+DogSolve1D ... Step   19   CFL = 0.440   dt =  4.400e-03   t =  8.120e-02
+DogSolve1D ... Step   20   CFL = 0.440   dt =  4.400e-03   t =  8.560e-02
+DogSolve1D ... Step   21   CFL = 0.440   dt =  4.400e-03   t =  9.000e-02
+DogSolve1D ... Step   22   CFL = 0.440   dt =  4.400e-03   t =  9.440e-02
+DogSolve1D ... Step   23   CFL = 0.440   dt =  4.400e-03   t =  9.880e-02
+DogSolve1D ... Step   24   CFL = 0.120   dt =  1.200e-03   t =  1.000e-01
+DOGPACK: Frame   1: plot files done at time t = 1.00000e-01
+
+DogSolve1D ... Step    1   CFL = 0.440   dt =  4.400e-03   t =  1.044e-01
+DogSolve1D ... Step    2   CFL = 0.440   dt =  4.400e-03   t =  1.088e-01
+DogSolve1D ... Step    3   CFL = 0.440   dt =  4.400e-03   t =  1.132e-01
+DogSolve1D ... Step    4   CFL = 0.440   dt =  4.400e-03   t =  1.176e-01
+DogSolve1D ... Step    5   CFL = 0.440   dt =  4.400e-03   t =  1.220e-01
+DogSolve1D ... Step    6   CFL = 0.440   dt =  4.400e-03   t =  1.264e-01
+DogSolve1D ... Step    7   CFL = 0.440   dt =  4.400e-03   t =  1.308e-01
+DogSolve1D ... Step    8   CFL = 0.440   dt =  4.400e-03   t =  1.352e-01
+DogSolve1D ... Step    9   CFL = 0.440   dt =  4.400e-03   t =  1.396e-01
+DogSolve1D ... Step   10   CFL = 0.440   dt =  4.400e-03   t =  1.440e-01
+DogSolve1D ... Step   11   CFL = 0.440   dt =  4.400e-03   t =  1.484e-01
+DogSolve1D ... Step   12   CFL = 0.440   dt =  4.400e-03   t =  1.528e-01
+DogSolve1D ... Step   13   CFL = 0.440   dt =  4.400e-03   t =  1.572e-01
+DogSolve1D ... Step   14   CFL = 0.440   dt =  4.400e-03   t =  1.616e-01
+DogSolve1D ... Step   15   CFL = 0.440   dt =  4.400e-03   t =  1.660e-01
+DogSolve1D ... Step   16   CFL = 0.440   dt =  4.400e-03   t =  1.704e-01
+DogSolve1D ... Step   17   CFL = 0.440   dt =  4.400e-03   t =  1.748e-01
+DogSolve1D ... Step   18   CFL = 0.440   dt =  4.400e-03   t =  1.792e-01
+DogSolve1D ... Step   19   CFL = 0.440   dt =  4.400e-03   t =  1.836e-01
+DogSolve1D ... Step   20   CFL = 0.440   dt =  4.400e-03   t =  1.880e-01
+DogSolve1D ... Step   21   CFL = 0.440   dt =  4.400e-03   t =  1.924e-01
+DogSolve1D ... Step   22   CFL = 0.440   dt =  4.400e-03   t =  1.968e-01
+DogSolve1D ... Step   23   CFL = 0.320   dt =  3.200e-03   t =  2.000e-01
+DOGPACK: Frame   2: plot files done at time t = 2.00000e-01
+
+DogSolve1D ... Step    1   CFL = 0.440   dt =  4.400e-03   t =  2.044e-01
+DogSolve1D ... Step    2   CFL = 0.440   dt =  4.400e-03   t =  2.088e-01
+DogSolve1D ... Step    3   CFL = 0.440   dt =  4.400e-03   t =  2.132e-01
+DogSolve1D ... Step    4   CFL = 0.440   dt =  4.400e-03   t =  2.176e-01
+DogSolve1D ... Step    5   CFL = 0.440   dt =  4.400e-03   t =  2.220e-01
+DogSolve1D ... Step    6   CFL = 0.440   dt =  4.400e-03   t =  2.264e-01
+DogSolve1D ... Step    7   CFL = 0.440   dt =  4.400e-03   t =  2.308e-01
+DogSolve1D ... Step    8   CFL = 0.440   dt =  4.400e-03   t =  2.352e-01
+DogSolve1D ... Step    9   CFL = 0.440   dt =  4.400e-03   t =  2.396e-01
+DogSolve1D ... Step   10   CFL = 0.440   dt =  4.400e-03   t =  2.440e-01
+DogSolve1D ... Step   11   CFL = 0.440   dt =  4.400e-03   t =  2.484e-01
+DogSolve1D ... Step   12   CFL = 0.440   dt =  4.400e-03   t =  2.528e-01
+DogSolve1D ... Step   13   CFL = 0.440   dt =  4.400e-03   t =  2.572e-01
+DogSolve1D ... Step   14   CFL = 0.440   dt =  4.400e-03   t =  2.616e-01
+DogSolve1D ... Step   15   CFL = 0.440   dt =  4.400e-03   t =  2.660e-01
+DogSolve1D ... Step   16   CFL = 0.440   dt =  4.400e-03   t =  2.704e-01
+DogSolve1D ... Step   17   CFL = 0.440   dt =  4.400e-03   t =  2.748e-01
+DogSolve1D ... Step   18   CFL = 0.440   dt =  4.400e-03   t =  2.792e-01
+DogSolve1D ... Step   19   CFL = 0.440   dt =  4.400e-03   t =  2.836e-01
+DogSolve1D ... Step   20   CFL = 0.440   dt =  4.400e-03   t =  2.880e-01
+DogSolve1D ... Step   21   CFL = 0.440   dt =  4.400e-03   t =  2.924e-01
+DogSolve1D ... Step   22   CFL = 0.440   dt =  4.400e-03   t =  2.968e-01
+DogSolve1D ... Step   23   CFL = 0.320   dt =  3.200e-03   t =  3.000e-01
+DOGPACK: Frame   3: plot files done at time t = 3.00000e-01
+
+DogSolve1D ... Step    1   CFL = 0.440   dt =  4.400e-03   t =  3.044e-01
+DogSolve1D ... Step    2   CFL = 0.440   dt =  4.400e-03   t =  3.088e-01
+DogSolve1D ... Step    3   CFL = 0.440   dt =  4.400e-03   t =  3.132e-01
+DogSolve1D ... Step    4   CFL = 0.440   dt =  4.400e-03   t =  3.176e-01
+DogSolve1D ... Step    5   CFL = 0.440   dt =  4.400e-03   t =  3.220e-01
+DogSolve1D ... Step    6   CFL = 0.440   dt =  4.400e-03   t =  3.264e-01
+DogSolve1D ... Step    7   CFL = 0.440   dt =  4.400e-03   t =  3.308e-01
+DogSolve1D ... Step    8   CFL = 0.440   dt =  4.400e-03   t =  3.352e-01
+DogSolve1D ... Step    9   CFL = 0.440   dt =  4.400e-03   t =  3.396e-01
+DogSolve1D ... Step   10   CFL = 0.440   dt =  4.400e-03   t =  3.440e-01
+DogSolve1D ... Step   11   CFL = 0.440   dt =  4.400e-03   t =  3.484e-01
+DogSolve1D ... Step   12   CFL = 0.440   dt =  4.400e-03   t =  3.528e-01
+DogSolve1D ... Step   13   CFL = 0.440   dt =  4.400e-03   t =  3.572e-01
+DogSolve1D ... Step   14   CFL = 0.440   dt =  4.400e-03   t =  3.616e-01
+DogSolve1D ... Step   15   CFL = 0.440   dt =  4.400e-03   t =  3.660e-01
+DogSolve1D ... Step   16   CFL = 0.440   dt =  4.400e-03   t =  3.704e-01
+DogSolve1D ... Step   17   CFL = 0.440   dt =  4.400e-03   t =  3.748e-01
+DogSolve1D ... Step   18   CFL = 0.440   dt =  4.400e-03   t =  3.792e-01
+DogSolve1D ... Step   19   CFL = 0.440   dt =  4.400e-03   t =  3.836e-01
+DogSolve1D ... Step   20   CFL = 0.440   dt =  4.400e-03   t =  3.880e-01
+DogSolve1D ... Step   21   CFL = 0.440   dt =  4.400e-03   t =  3.924e-01
+DogSolve1D ... Step   22   CFL = 0.440   dt =  4.400e-03   t =  3.968e-01
+DogSolve1D ... Step   23   CFL = 0.320   dt =  3.200e-03   t =  4.000e-01
+DOGPACK: Frame   4: plot files done at time t = 4.00000e-01
+
+DogSolve1D ... Step    1   CFL = 0.440   dt =  4.400e-03   t =  4.044e-01
+DogSolve1D ... Step    2   CFL = 0.440   dt =  4.400e-03   t =  4.088e-01
+DogSolve1D ... Step    3   CFL = 0.440   dt =  4.400e-03   t =  4.132e-01
+DogSolve1D ... Step    4   CFL = 0.440   dt =  4.400e-03   t =  4.176e-01
+DogSolve1D ... Step    5   CFL = 0.440   dt =  4.400e-03   t =  4.220e-01
+DogSolve1D ... Step    6   CFL = 0.440   dt =  4.400e-03   t =  4.264e-01
+DogSolve1D ... Step    7   CFL = 0.440   dt =  4.400e-03   t =  4.308e-01
+DogSolve1D ... Step    8   CFL = 0.440   dt =  4.400e-03   t =  4.352e-01
+DogSolve1D ... Step    9   CFL = 0.440   dt =  4.400e-03   t =  4.396e-01
+DogSolve1D ... Step   10   CFL = 0.440   dt =  4.400e-03   t =  4.440e-01
+DogSolve1D ... Step   11   CFL = 0.440   dt =  4.400e-03   t =  4.484e-01
+DogSolve1D ... Step   12   CFL = 0.440   dt =  4.400e-03   t =  4.528e-01
+DogSolve1D ... Step   13   CFL = 0.440   dt =  4.400e-03   t =  4.572e-01
+DogSolve1D ... Step   14   CFL = 0.440   dt =  4.400e-03   t =  4.616e-01
+DogSolve1D ... Step   15   CFL = 0.440   dt =  4.400e-03   t =  4.660e-01
+DogSolve1D ... Step   16   CFL = 0.440   dt =  4.400e-03   t =  4.704e-01
+DogSolve1D ... Step   17   CFL = 0.440   dt =  4.400e-03   t =  4.748e-01
+DogSolve1D ... Step   18   CFL = 0.440   dt =  4.400e-03   t =  4.792e-01
+DogSolve1D ... Step   19   CFL = 0.440   dt =  4.400e-03   t =  4.836e-01
+DogSolve1D ... Step   20   CFL = 0.440   dt =  4.400e-03   t =  4.880e-01
+DogSolve1D ... Step   21   CFL = 0.440   dt =  4.400e-03   t =  4.924e-01
+DogSolve1D ... Step   22   CFL = 0.440   dt =  4.400e-03   t =  4.968e-01
+DogSolve1D ... Step   23   CFL = 0.320   dt =  3.200e-03   t =  5.000e-01
+DOGPACK: Frame   5: plot files done at time t = 5.00000e-01
+
+DogSolve1D ... Step    1   CFL = 0.440   dt =  4.400e-03   t =  5.044e-01
+DogSolve1D ... Step    2   CFL = 0.440   dt =  4.400e-03   t =  5.088e-01
+DogSolve1D ... Step    3   CFL = 0.440   dt =  4.400e-03   t =  5.132e-01
+DogSolve1D ... Step    4   CFL = 0.440   dt =  4.400e-03   t =  5.176e-01
+DogSolve1D ... Step    5   CFL = 0.440   dt =  4.400e-03   t =  5.220e-01
+DogSolve1D ... Step    6   CFL = 0.440   dt =  4.400e-03   t =  5.264e-01
+DogSolve1D ... Step    7   CFL = 0.440   dt =  4.400e-03   t =  5.308e-01
+DogSolve1D ... Step    8   CFL = 0.440   dt =  4.400e-03   t =  5.352e-01
+DogSolve1D ... Step    9   CFL = 0.440   dt =  4.400e-03   t =  5.396e-01
+DogSolve1D ... Step   10   CFL = 0.440   dt =  4.400e-03   t =  5.440e-01
+DogSolve1D ... Step   11   CFL = 0.440   dt =  4.400e-03   t =  5.484e-01
+DogSolve1D ... Step   12   CFL = 0.440   dt =  4.400e-03   t =  5.528e-01
+DogSolve1D ... Step   13   CFL = 0.440   dt =  4.400e-03   t =  5.572e-01
+DogSolve1D ... Step   14   CFL = 0.440   dt =  4.400e-03   t =  5.616e-01
+DogSolve1D ... Step   15   CFL = 0.440   dt =  4.400e-03   t =  5.660e-01
+DogSolve1D ... Step   16   CFL = 0.440   dt =  4.400e-03   t =  5.704e-01
+DogSolve1D ... Step   17   CFL = 0.440   dt =  4.400e-03   t =  5.748e-01
+DogSolve1D ... Step   18   CFL = 0.440   dt =  4.400e-03   t =  5.792e-01
+DogSolve1D ... Step   19   CFL = 0.440   dt =  4.400e-03   t =  5.836e-01
+DogSolve1D ... Step   20   CFL = 0.440   dt =  4.400e-03   t =  5.880e-01
+DogSolve1D ... Step   21   CFL = 0.440   dt =  4.400e-03   t =  5.924e-01
+DogSolve1D ... Step   22   CFL = 0.440   dt =  4.400e-03   t =  5.968e-01
+DogSolve1D ... Step   23   CFL = 0.320   dt =  3.200e-03   t =  6.000e-01
+DOGPACK: Frame   6: plot files done at time t = 6.00000e-01
+
+DogSolve1D ... Step    1   CFL = 0.440   dt =  4.400e-03   t =  6.044e-01
+DogSolve1D ... Step    2   CFL = 0.440   dt =  4.400e-03   t =  6.088e-01
+DogSolve1D ... Step    3   CFL = 0.440   dt =  4.400e-03   t =  6.132e-01
+DogSolve1D ... Step    4   CFL = 0.440   dt =  4.400e-03   t =  6.176e-01
+DogSolve1D ... Step    5   CFL = 0.440   dt =  4.400e-03   t =  6.220e-01
+DogSolve1D ... Step    6   CFL = 0.440   dt =  4.400e-03   t =  6.264e-01
+DogSolve1D ... Step    7   CFL = 0.440   dt =  4.400e-03   t =  6.308e-01
+DogSolve1D ... Step    8   CFL = 0.440   dt =  4.400e-03   t =  6.352e-01
+DogSolve1D ... Step    9   CFL = 0.440   dt =  4.400e-03   t =  6.396e-01
+DogSolve1D ... Step   10   CFL = 0.440   dt =  4.400e-03   t =  6.440e-01
+DogSolve1D ... Step   11   CFL = 0.440   dt =  4.400e-03   t =  6.484e-01
+DogSolve1D ... Step   12   CFL = 0.440   dt =  4.400e-03   t =  6.528e-01
+DogSolve1D ... Step   13   CFL = 0.440   dt =  4.400e-03   t =  6.572e-01
+DogSolve1D ... Step   14   CFL = 0.440   dt =  4.400e-03   t =  6.616e-01
+DogSolve1D ... Step   15   CFL = 0.440   dt =  4.400e-03   t =  6.660e-01
+DogSolve1D ... Step   16   CFL = 0.440   dt =  4.400e-03   t =  6.704e-01
+DogSolve1D ... Step   17   CFL = 0.440   dt =  4.400e-03   t =  6.748e-01
+DogSolve1D ... Step   18   CFL = 0.440   dt =  4.400e-03   t =  6.792e-01
+DogSolve1D ... Step   19   CFL = 0.440   dt =  4.400e-03   t =  6.836e-01
+DogSolve1D ... Step   20   CFL = 0.440   dt =  4.400e-03   t =  6.880e-01
+DogSolve1D ... Step   21   CFL = 0.440   dt =  4.400e-03   t =  6.924e-01
+DogSolve1D ... Step   22   CFL = 0.440   dt =  4.400e-03   t =  6.968e-01
+DogSolve1D ... Step   23   CFL = 0.320   dt =  3.200e-03   t =  7.000e-01
+DOGPACK: Frame   7: plot files done at time t = 7.00000e-01
+
+DogSolve1D ... Step    1   CFL = 0.440   dt =  4.400e-03   t =  7.044e-01
+DogSolve1D ... Step    2   CFL = 0.440   dt =  4.400e-03   t =  7.088e-01
+DogSolve1D ... Step    3   CFL = 0.440   dt =  4.400e-03   t =  7.132e-01
+DogSolve1D ... Step    4   CFL = 0.440   dt =  4.400e-03   t =  7.176e-01
+DogSolve1D ... Step    5   CFL = 0.440   dt =  4.400e-03   t =  7.220e-01
+DogSolve1D ... Step    6   CFL = 0.440   dt =  4.400e-03   t =  7.264e-01
+DogSolve1D ... Step    7   CFL = 0.440   dt =  4.400e-03   t =  7.308e-01
+DogSolve1D ... Step    8   CFL = 0.440   dt =  4.400e-03   t =  7.352e-01
+DogSolve1D ... Step    9   CFL = 0.440   dt =  4.400e-03   t =  7.396e-01
+DogSolve1D ... Step   10   CFL = 0.440   dt =  4.400e-03   t =  7.440e-01
+DogSolve1D ... Step   11   CFL = 0.440   dt =  4.400e-03   t =  7.484e-01
+DogSolve1D ... Step   12   CFL = 0.440   dt =  4.400e-03   t =  7.528e-01
+DogSolve1D ... Step   13   CFL = 0.440   dt =  4.400e-03   t =  7.572e-01
+DogSolve1D ... Step   14   CFL = 0.440   dt =  4.400e-03   t =  7.616e-01
+DogSolve1D ... Step   15   CFL = 0.440   dt =  4.400e-03   t =  7.660e-01
+DogSolve1D ... Step   16   CFL = 0.440   dt =  4.400e-03   t =  7.704e-01
+DogSolve1D ... Step   17   CFL = 0.440   dt =  4.400e-03   t =  7.748e-01
+DogSolve1D ... Step   18   CFL = 0.440   dt =  4.400e-03   t =  7.792e-01
+DogSolve1D ... Step   19   CFL = 0.440   dt =  4.400e-03   t =  7.836e-01
+DogSolve1D ... Step   20   CFL = 0.440   dt =  4.400e-03   t =  7.880e-01
+DogSolve1D ... Step   21   CFL = 0.440   dt =  4.400e-03   t =  7.924e-01
+DogSolve1D ... Step   22   CFL = 0.440   dt =  4.400e-03   t =  7.968e-01
+DogSolve1D ... Step   23   CFL = 0.320   dt =  3.200e-03   t =  8.000e-01
+DOGPACK: Frame   8: plot files done at time t = 8.00000e-01
+
+DogSolve1D ... Step    1   CFL = 0.440   dt =  4.400e-03   t =  8.044e-01
+DogSolve1D ... Step    2   CFL = 0.440   dt =  4.400e-03   t =  8.088e-01
+DogSolve1D ... Step    3   CFL = 0.440   dt =  4.400e-03   t =  8.132e-01
+DogSolve1D ... Step    4   CFL = 0.440   dt =  4.400e-03   t =  8.176e-01
+DogSolve1D ... Step    5   CFL = 0.440   dt =  4.400e-03   t =  8.220e-01
+DogSolve1D ... Step    6   CFL = 0.440   dt =  4.400e-03   t =  8.264e-01
+DogSolve1D ... Step    7   CFL = 0.440   dt =  4.400e-03   t =  8.308e-01
+DogSolve1D ... Step    8   CFL = 0.440   dt =  4.400e-03   t =  8.352e-01
+DogSolve1D ... Step    9   CFL = 0.440   dt =  4.400e-03   t =  8.396e-01
+DogSolve1D ... Step   10   CFL = 0.440   dt =  4.400e-03   t =  8.440e-01
+DogSolve1D ... Step   11   CFL = 0.440   dt =  4.400e-03   t =  8.484e-01
+DogSolve1D ... Step   12   CFL = 0.440   dt =  4.400e-03   t =  8.528e-01
+DogSolve1D ... Step   13   CFL = 0.440   dt =  4.400e-03   t =  8.572e-01
+DogSolve1D ... Step   14   CFL = 0.440   dt =  4.400e-03   t =  8.616e-01
+DogSolve1D ... Step   15   CFL = 0.440   dt =  4.400e-03   t =  8.660e-01
+DogSolve1D ... Step   16   CFL = 0.440   dt =  4.400e-03   t =  8.704e-01
+DogSolve1D ... Step   17   CFL = 0.440   dt =  4.400e-03   t =  8.748e-01
+DogSolve1D ... Step   18   CFL = 0.440   dt =  4.400e-03   t =  8.792e-01
+DogSolve1D ... Step   19   CFL = 0.440   dt =  4.400e-03   t =  8.836e-01
+DogSolve1D ... Step   20   CFL = 0.440   dt =  4.400e-03   t =  8.880e-01
+DogSolve1D ... Step   21   CFL = 0.440   dt =  4.400e-03   t =  8.924e-01
+DogSolve1D ... Step   22   CFL = 0.440   dt =  4.400e-03   t =  8.968e-01
+DogSolve1D ... Step   23   CFL = 0.320   dt =  3.200e-03   t =  9.000e-01
+DOGPACK: Frame   9: plot files done at time t = 9.00000e-01
+
+DogSolve1D ... Step    1   CFL = 0.440   dt =  4.400e-03   t =  9.044e-01
+DogSolve1D ... Step    2   CFL = 0.440   dt =  4.400e-03   t =  9.088e-01
+DogSolve1D ... Step    3   CFL = 0.440   dt =  4.400e-03   t =  9.132e-01
+DogSolve1D ... Step    4   CFL = 0.440   dt =  4.400e-03   t =  9.176e-01
+DogSolve1D ... Step    5   CFL = 0.440   dt =  4.400e-03   t =  9.220e-01
+DogSolve1D ... Step    6   CFL = 0.440   dt =  4.400e-03   t =  9.264e-01
+DogSolve1D ... Step    7   CFL = 0.440   dt =  4.400e-03   t =  9.308e-01
+DogSolve1D ... Step    8   CFL = 0.440   dt =  4.400e-03   t =  9.352e-01
+DogSolve1D ... Step    9   CFL = 0.440   dt =  4.400e-03   t =  9.396e-01
+DogSolve1D ... Step   10   CFL = 0.440   dt =  4.400e-03   t =  9.440e-01
+DogSolve1D ... Step   11   CFL = 0.440   dt =  4.400e-03   t =  9.484e-01
+DogSolve1D ... Step   12   CFL = 0.440   dt =  4.400e-03   t =  9.528e-01
+DogSolve1D ... Step   13   CFL = 0.440   dt =  4.400e-03   t =  9.572e-01
+DogSolve1D ... Step   14   CFL = 0.440   dt =  4.400e-03   t =  9.616e-01
+DogSolve1D ... Step   15   CFL = 0.440   dt =  4.400e-03   t =  9.660e-01
+DogSolve1D ... Step   16   CFL = 0.440   dt =  4.400e-03   t =  9.704e-01
+DogSolve1D ... Step   17   CFL = 0.440   dt =  4.400e-03   t =  9.748e-01
+DogSolve1D ... Step   18   CFL = 0.440   dt =  4.400e-03   t =  9.792e-01
+DogSolve1D ... Step   19   CFL = 0.440   dt =  4.400e-03   t =  9.836e-01
+DogSolve1D ... Step   20   CFL = 0.440   dt =  4.400e-03   t =  9.880e-01
+DogSolve1D ... Step   21   CFL = 0.440   dt =  4.400e-03   t =  9.924e-01
+DogSolve1D ... Step   22   CFL = 0.440   dt =  4.400e-03   t =  9.968e-01
+DogSolve1D ... Step   23   CFL = 0.320   dt =  3.200e-03   t =  1.000e+00
+DOGPACK: Frame  10: plot files done at time t = 1.00000e+00
+
+ Total elapsed time in seconds = 1.00000e+00
+
+hi

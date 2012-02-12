@@ -1,5 +1,15 @@
 from PyDOG import runDOG
+import pyclaw
+def advection(iplot=False,htmlplot=False,outputdir='output'):
+ if iplot:
+  runDOG(True,False,outputdir) 
+ elif htmlplot:
+  runDOG(False,True,outputdir)
+ else:
+  runDOG(False,False,outputdir)
+ 
 
-runDOG('_output')
-
-
+if __name__=="__main__":
+    import sys
+    from pyclaw.util import run_app_from_main
+    output = run_app_from_main(advection)
