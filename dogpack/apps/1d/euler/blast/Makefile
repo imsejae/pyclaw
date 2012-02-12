@@ -6,8 +6,6 @@ include $(DOGPACK)/lib/1d/Makefile.defs
 # overridden library objects
 #
 InitApp  =  InitApp
-RunStartScript  = $(DOGPACK)/lib/PyClawRunStartScript
-Output          = $(DOGPACK)/lib/1d/PyClawOutput
 
 # place to add object modules
 #
