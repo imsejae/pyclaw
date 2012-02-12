@@ -1,0 +1,7 @@
+     728  : NumElems 
+     666  : NumPhysElems 
+      62  : NumGhostElems 
+     427  : NumNodes 
+     365  : NumPhysNodes 
+      62  : NumBndNodes 
+    1030  : NumEdges 
