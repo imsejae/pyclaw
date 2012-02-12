@@ -7,11 +7,8 @@ include $(DOGPACK)/lib/1d/Makefile.defs
 #
 # overridden library objects
 #
-include $(DOGPACK)/apps/semi_lagrangian/lib/1d/Makefile.defs
-
-DogSolveUser           = $(DOGPACK)/apps/semi_lagrangian/lib/1d/DogSolveSL
-DFluxFunc              = DFluxFunc
-D2FluxFunc             = D2FluxFunc
+RunStartScript  = $(DOGPACK)/lib/PyClawRunStartScript
+Output          = $(DOGPACK)/lib/1d/PyClawOutput
 
 # place to add object modules
 #
